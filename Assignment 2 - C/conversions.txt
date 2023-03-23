@@ -1,0 +1,30 @@
+Put the solutions to the data conversions problem here.
+
+* Efe Comu
+
+// Binary conversions:
+255 -> 128 + 64 + 32 + 16 + 8 + 4 + 2 + 1 => 1111 1111
+
+64 -> 64 + 0 => 1000000
+
+42 -> 32 + 8 + 2 => 101010
+
+111 -> 64 + 32 + 8 + 4 + 2 + 1 => 1101111
+
+// Hex conversions:
+255 -> 1111 1111 in binary =>  FF in hex
+
+64 -> 0100 0000 in binary => 40 in hex 
+
+42 -> 0010 1010 in binary => 2A in hex
+
+111 -> 0110 1111 in binary => 6F in hex
+
+// Octal conversions:
+255 -> 011 111 111 => 377 in octal
+
+64 -> 001 000 000 => 100 in octal
+
+42 -> 101 010 => 52 in octal
+
+111 -> 001 101 111 => 157 in octal
