@@ -1,0 +1,61 @@
+Put your solutions to the Sums problems here.
+
+* Efe Comu
+
+Organize everything clearly, step-by-step, so that it's easy to identify
+how you got the solution to each problem.
+
+8-bit two's complement arithmetic
+
+// 1) 20 + (-20)
+20 -> 0001 0100
+-20 in two's complement:
+Flip: 1110 1011
+Add 1: 1110 1011 + 0000 0001 = 1110 1100
+
+Sum: 0001 0100
+     1110 1100
+    +_________
+   1 0000 0000
+// Ignore the 9th left-out bit, the answer is 0.
+
+// 2) 100 + (-50)
+100 -> 0110 0100
+-50 in two's complement:
+50: 0011 0010
+Flip: 1100 1101
+Add 1: 1100 1110 -> -50
+
+Sum: 0110 0100
+     1100 1110
+    +_________
+   1 0011 0010
+// Ignore the 9th left-out bit, the answer is 0011 0010 = 50.
+
+// 3) -100 + 50
+-100 in two's complement:
+100: 0110 0100
+Flip: 1001 1011
+Add 1: 1001 1100 -> -100
+50: 0011 0010
+
+Sum: 1001 1100
+     0011 0010
+    +_________
+     1100 1110 -> Answer
+Flip and add 1 to the answer:
+0011 0001 + 1 = 0011 0010
+0011 0010 = 50 in magnitude.
+
+// 4) 77 + (-55)
+77 -> 0100 1101 
+-55 in two's complement:
+55: 0011 0111
+Flip: 1100 1000
+Add 1: 1100 1001
+
+Sum: 0100 1101
+     1100 1001
+    +_________
+   1 0001 0110
+// Ignore the 9th left-out bit, the answer is 0001 0110 = 22.
